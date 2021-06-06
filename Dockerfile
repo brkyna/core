@@ -21,7 +21,7 @@ COPY ./config/apache2/000-default.conf /etc/apache2/sites-enabled/000-default.co
 COPY ./config/php/php.ini $PHP_INI_DIR/php.ini
 
 # Copy in the OpenEMIS Core application files
-COPY ./core /var/www/html/core
+COPY ./config/core /var/www/html/core
 
 # Copy in the OpenEMIS Core configuration file
 COPY ./config/core/datasource.php /var/www/html/core/config
